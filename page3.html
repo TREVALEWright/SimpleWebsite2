@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- HTML Comment: Author and Date -->
+    <!-- Author: Alexandria Zacherl / Gridlock Interactive Group -->
+    <!-- Date: November 8, 2026 -->
+    <title>About Us & Contact | Gridlock Interactive</title>
+    
+    <!-- Internal/Embedded CSS Style Sheet -->
+    <style>
+        /* Base page styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0f111a;
+            color: #e0e6ed;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #1a1d2e;
+            border-bottom: 3px solid #6c5ce7;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            color: #a29bfe;
+            margin: 0;
+            font-size: 2rem;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            color: #e0e6ed;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #00cec9;
+        }
+
+        /* Main container styling */
+        main {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Section Headings */
+        h2 {
+            color: #00cec9;
+            border-bottom: 2px solid #2d3436;
+            padding-bottom: 10px;
+            margin-top: 40px;
+            font-size: 1.8rem;
+        }
+
+        /* Origin Story & Banner */
+        .story-section {
+            background-color: #16192b;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Image styling */
+        .company-img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-top: 15px;
+            border: 2px solid #6c5ce7;
+        }
+
+        /* Founder Cards Layout */
+        .team-grid {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .card {
+            background-color: #16192b;
+            border: 1px solid #2d3436;
+            border-radius: 8px;
+            padding: 20px;
+            flex: 1 1 calc(33.333% - 20px);
+            box-sizing: border-box;
+            min-width: 260px;
+        }
+
+        .card h3 {
+            color: #a29bfe;
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
+
+        .card .title {
+            color: #00cec9;
+            font-weight: bold;
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+        }
+
+        /* Contact & Hours Grid */
+        .info-grid {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .info-box {
+            flex: 1 1 300px;
+            background-color: #16192b;
+            padding: 25px;
+            border-radius: 8px;
+        }
+
+        .info-box ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .info-box li {
+            margin-bottom: 10px;
+        }
+
+        /* FAQ Accordion Styling */
+        .faq-item {
+            background-color: #16192b;
+            padding: 15px 20px;
+            margin-bottom: 15px;
+            border-left: 4px solid #6c5ce7;
+            border-radius: 4px;
+        }
+
+        .faq-item h3 {
+            margin: 0 0 8px 0;
+            color: #a29bfe;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #1a1d2e;
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+            border-top: 1px solid #2d3436;
+            color: #b2bec3;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Container -->
+    <header>
+        <h1>Gridlock Interactive</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="page2.html">Products & Services</a>
+            <a href="page3.html">About Us & Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main Content Container -->
+    <main>
+        
+        <!-- The Origin Story -->
+        <section class="story-section">
+            <h2>Our Origin Story</h2>
+            <p>
+                The three founders were good friends in college, all passionate about video games. After college graduation, each of them worked for a business that did not bring them much excitement. One friend was great in IT, one was great in research, and the other was a great digital artist. Every weekend, they would play games online with each other to make up for their uneventful career lives. 
+            </p>
+            <p>
+                As time went on, they all realized that they had the skills to turn their passion into a career. After some careful planning, Gridlock Interactive was born! Today, we operate as a mid-size video game company dedicated to creating unforgettable console and PC experiences, expanding worlds through DLC, and supporting active multiplayer communities across the globe.
+            </p>
+            <!-- Required Image Element -->
+            <img class="company-img" src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1200&q=80" alt="Gridlock Interactive Game Development Studio Workspace">
+        </section>
+
+        <!-- Meet the Founders / Team -->
+        <section>
+            <h2>Meet the Founders</h2>
+            <div class="team-grid">
+                
+                <div class="card">
+                    <h3>Tre'vale Wright</h3>
+                    <div class="title">Head of IT Division & Lead System Administrator</div>
+                    <p>With a degree in Information Technology, Tre'vale manages all of the network infrastructure, server stability, and cybersecurity operations across the company to keep online services running smoothly.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Rodney Spigner</h3>
+                    <div class="title">Lead UX / Player Researcher</div>
+                    <p>With a degree in Information Science and a minor in Applied Computing, Rodney acts as the voice of the people; turning player feedback into results and playtesting pre-release game data.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Alexandria Zacherl</h3>
+                    <div class="title">Head of Game Design & Lead Character Artist</div>
+                    <p>With a degree in Media Arts, Alexandria makes sure our games are visually appealing and makes key decisions for the appearance of many of the iconic game characters players love today.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Details & Business Hours -->
+        <section>
+            <h2>Contact & Studio Hours</h2>
+            <div class="info-grid">
+                
+                <div class="info-box">
+                    <h3>Get in Touch</h3>
+                    <p>Have questions about our games, bug reports, or partnership inquiries? Reach out to our team!</p>
+                    <ul>
+                        <li><strong>Support Email:</strong> support@gridlockinteractive.com</li>
+                        <li><strong>Press & Media:</strong> media@gridlockinteractive.com</li>
+                        <li><strong>Studio Phone:</strong> (803) 555-0198</li>
+                        <li><strong>Headquarters:</strong> 1200 Main Street, Suite 404, Columbia, SC 29201</li>
+                        <li><strong>Social Media:</strong> @GridlockGames (X/Twitter, Instagram, YouTube, Twitch)</li>
+                    </ul>
+                </div>
+
+                <div class="info-box">
+                    <h3>Studio Hours & Support Availability</h3>
+                    <p>Our player support center and studio headquarters operate during the following hours (EST):</p>
+                    <ul>
+                        <li><strong>Monday - Friday:</strong> 9:00 AM – 7:00 PM</li>
+                        <li><strong>Saturday:</strong> 10:00 AM – 4:00 PM</li>
+                        <li><strong>Sunday:</strong> Closed (Server Monitoring active 24/7)</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Frequently Asked Questions (FAQ) -->
+        <section>
+            <h2>Frequently Asked Questions (FAQ)</h2>
+            
+            <div class="faq-item">
+                <h3>What platforms do Gridlock Interactive games launch on?</h3>
+                <p>We build games primarily for PC (Steam/Epic Games Store) as well as PlayStation 5 and Xbox Series X/S consoles.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How can I participate in upcoming closed beta playtests?</h3>
+                <p>Our UX research team led by Rodney regularly invites community members to test early builds! Follow our social channels or sign up for our newsletter to get notified when test applications open.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Are DLC packages included with the base game purchase?</h3>
+                <p>Major story expansions and cosmetic DLCs are sold separately, but all core balance updates, server fixes, and seasonal events are delivered free to all owners of the game.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Container -->
+    <footer>
+        <p>&copy; 2026 Gridlock Interactive. All Rights Reserved. Created for ITEC 101 Web Page Assignment.</p>
+    </footer>
+
+</body>
+</html>

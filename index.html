@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gridlock Interactive | Home</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-color: #10131c;
+            color: #ffffff;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 25px 5%;
+            background-color: #1b2132;
+            border-bottom: 3px solid #a7ff62;
+            text-align: center;
+        }
+
+        .business-name {
+            margin: 0 0 15px;
+            color: #a7ff62;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        nav a {
+            color: #ffffff;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        nav a:hover,
+        nav a[aria-current="page"] {
+            color: #a7ff62;
+        }
+
+        a:focus-visible {
+            outline: 3px solid #a7ff62;
+            outline-offset: 5px;
+        }
+
+        main {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            margin: 10px 0;
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            line-height: 1.1;
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #a7ff62;
+            font-size: 1.8rem;
+        }
+
+        p {
+            color: #d2d7e4;
+            font-size: 1.05rem;
+        }
+
+        .hero {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .tagline {
+            color: #a7ff62;
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+
+        .hero img {
+            display: block;
+            width: 100%;
+            max-width: 850px;
+            height: 350px;
+            margin: 30px auto;
+            object-fit: cover;
+            border: 2px solid #39445e;
+            border-radius: 12px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 22px;
+            border: 2px solid #a7ff62;
+            border-radius: 6px;
+            background-color: #a7ff62;
+            color: #10131c;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            background-color: #c8ff9e;
+            border-color: #c8ff9e;
+        }
+
+        .button.secondary {
+            background-color: transparent;
+            color: #a7ff62;
+        }
+
+        .button.secondary:hover {
+            background-color: #263329;
+        }
+
+        .about {
+            padding: 30px;
+            border-left: 4px solid #a7ff62;
+            border-radius: 8px;
+            background-color: #1b2132;
+        }
+
+        .offerings {
+            padding: 55px 0;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            padding: 25px;
+            border: 1px solid #39445e;
+            border-radius: 10px;
+            background-color: #1b2132;
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: #a7ff62;
+        }
+
+        .mission {
+            margin-bottom: 50px;
+            padding: 30px;
+            border: 1px solid #a7ff62;
+            border-radius: 10px;
+            background-color: #1c2a21;
+            text-align: center;
+        }
+
+        footer {
+            padding: 20px;
+            background-color: #1b2132;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 700px) {
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero img {
+                height: 240px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!--
+        Author: Tj Wright
+        Date: November 8, 2026
+    -->
+
+    <!-- Header and navigation -->
+    <header>
+        <p class="business-name">GRIDLOCK INTERACTIVE</p>
+
+        <nav aria-label="Main navigation">
+            <a href="index.html" aria-current="page">Home</a>
+            <a href="products.html">Our Products</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main page content -->
+    <main>
+        <!-- Hero section -->
+        <section class="hero" aria-labelledby="hero-title">
+            <h1 id="hero-title">Gridlock Interactive</h1>
+
+            <p class="tagline">
+                Break the ordinary. Play the extraordinary.
+            </p>
+
+            <p>
+                Discover immersive worlds, unforgettable adventures,
+                and your next great gaming experience.
+            </p>
+
+            <!-- Keep gaming-setup.jpg in the same folder as index.html -->
+            <img
+    src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=1200&q=80"
+    alt="A gaming setup with colorful lighting and monitors"
+    width="850"
+    height="350"
+>
+            >
+
+            <div class="buttons">
+                <a class="button" href="products.html">
+                    Explore Our Products
+                </a>
+
+                <a class="button secondary" href="contact.html">
+                    Get in Touch
+                </a>
+            </div>
+        </section>
+
+        <!-- Elevator pitch -->
+        <section class="about" aria-labelledby="about-title">
+            <h2 id="about-title">Who We Are</h2>
+
+            <p>
+                Gridlock Interactive is a mid-sized gaming company
+                with roughly 300 employees creating exciting games
+                for PC and console players.
+                We offer original video games, downloadable content,
+                and online services for players who enjoy adventure,
+                competition, and connecting with friends.
+                Our artists, designers, and technology professionals
+                work together to bring imaginative worlds to life.
+            </p>
+        </section>
+
+        <!-- Featured business offerings -->
+        <section class="offerings" aria-labelledby="offerings-title">
+            <h2 id="offerings-title">More Ways to Play</h2>
+
+            <p>
+                Explore the experiences that make Gridlock Interactive unique.
+            </p>
+
+            <div class="card-grid">
+                <article class="card">
+                    <h3>PC and Console Games</h3>
+                    <p>
+                        Explore original worlds filled with exciting
+                        challenges, memorable characters, and engaging stories.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Downloadable Content</h3>
+                    <p>
+                        Expand your favorite games with new missions,
+                        character customization, and additional adventures.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Online Experiences</h3>
+                    <p>
+                        Connect with friends, compete with other players,
+                        and participate in community events.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Mission statement -->
+        <section class="mission" aria-labelledby="mission-title">
+            <h2 id="mission-title">Our Mission</h2>
+
+            <p>
+                Great games bring people together.
+                We combine creativity, teamwork, and technology
+                to build worlds that players love to explore.
+            </p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Gridlock Interactive. All rights reserved.</p>
+        <p>A fictional gaming company created for a student project.</p>
+    </footer>
+</body>
+</html>
